@@ -12,7 +12,7 @@ def d2e(phi, h, t):
     return np.cos(2*phi) + h*np.cos(t - phi)
 
 
-# МЕТОД НЬЮТОНА
+
 def newton(h, t, phi0, eps=1e-8, it=100):
     phi = phi0
     for _ in range(it):
@@ -118,7 +118,7 @@ plt.axvline(0, color='k', lw=0.8)
 plt.show()
 
 
-# ГРАФИК 3: КОЭРЦИТИВНАЯ СИЛА
+# КОЭРЦИТИВНАЯ СИЛА
 angles = np.arange(0, 91, 2)
 hc_loop = [coercive_force(a) for a in angles]
 
